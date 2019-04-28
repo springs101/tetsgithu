@@ -209,9 +209,8 @@ def getData_minute():
     getData_multiprocess('getData_minute', curentDay, curentDay)
 def bakGetDataLog():
 
-    curentTime = datetime.datetime.now()
-    onedaybeforeDay = curentTime.strftime("%Y-%m-%d")
-    sevendaybeforeDay = (curentTime - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
+    curentTime = datetime.datetime.now().strftime("%Y-%m-%d")
+    sevendaybeforeDay = (curentTime - datetime.timedelta(days=8)).strftime("%Y-%m-%d")
     print("wenti")
     obj = models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute',createTime__lte=sevendaybeforeDay )
 
