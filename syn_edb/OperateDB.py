@@ -9,9 +9,6 @@ class OperateDB():
      host = '192.168.86.71'
      pasword = ''
      user = 'root'
-     # host = '114.55.187.143'
-     # pasword = 'CrEoKHe5n-qVjQ9vFa#n0Y'
-     # user = 'tidb_write'
      port = 4000
      db = 'asterdata'
      charset = 'utf8'
