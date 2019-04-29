@@ -213,11 +213,9 @@ def bakGetDataLog():
     now_time = datetime.datetime.now()
     first_day = datetime.datetime(now_time.year, now_time.month, now_time.day)
     sevendaybeforeDay = (first_day - datetime.timedelta(days=8)).strftime("%Y-%m-%d")
-    print("wenti")
     objs = models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute',createTime__lte=sevendaybeforeDay )
     outputdic=[]
     for obj1 in objs:
-        tempobj=model_to_dict(obj1)
         ppc=models.AJobLogBak(jobname=obj1.jobname,startTime=obj1.startTime,endTime=obj1.endTime,jobtype=obj1.jobtype,\
                                 status=obj1.status,createTime=obj1.createTime,finishTime=obj1.finishTime,effectnum=obj1.effectnum,\
                               pageNo=obj1.pageNo,handjobid=obj1.handjobid,handsubjobno=obj1.handjobid)
