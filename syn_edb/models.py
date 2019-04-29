@@ -22,21 +22,6 @@ class AHandJob(models.Model):
         managed = False
         db_table = 'a_hand_job'
 
-class AHandJobBank(models.Model):
-    jobname = models.CharField(db_column='jobName', max_length=100, blank=True, null=True)  # Field name made lowercase.
-    startTime = models.DateTimeField(db_column='startTime', blank=True, null=True)  # Field name made lowercase.
-    endTime = models.DateTimeField(db_column='endTime', blank=True, null=True)  # Field name made lowercase.
-    subjobnum = models.IntegerField(db_column='subJobNum', blank=True, null=True)  # Field name made lowercase.
-    status = models.IntegerField(blank=True, null=True)
-    createtime = models.DateTimeField(db_column='createTime', blank=True, null=True)  # Field name made lowercase.
-    finishtime = models.DateTimeField(db_column='finishTime', blank=True, null=True)  # Field name made lowercase.
-    effectnum = models.IntegerField(db_column='effectNum', blank=True, null=True)  # Field name made lowercase.
-
-    class Meta:
-        managed = False
-        db_table = 'a_hand_job'
-
-
 class AJobLog(models.Model):
     jobname = models.CharField(db_column='jobName', max_length=100, blank=True, null=True)  # Field name made lowercase.
     jobtype = models.CharField(db_column='jobType', max_length=20, blank=True, null=True)  # Field name made lowercase.
@@ -63,8 +48,8 @@ class AJobLogBak(models.Model):
     startTime = models.DateTimeField(db_column='startTime', blank=True, null=True)  # Field name made lowercase.
     endTime = models.DateTimeField(db_column='endTime', blank=True, null=True)  # Field name made lowercase.
     status = models.IntegerField(blank=True, null=True)
-    createTime = models.DateTimeField(db_column='createTime', blank=True,auto_now_add=True)  # Field name made lowercase.
-    finishTime = models.DateTimeField(db_column='finishTime', blank=True,auto_now_add=True)  # Field name made lowercase.
+    createTime = models.DateTimeField(db_column='createTime', blank=True)  # Field name made lowercase.
+    finishTime = models.DateTimeField(db_column='finishTime', blank=True)  # Field name made lowercase.
     effectnum = models.IntegerField(db_column='effectNum', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:

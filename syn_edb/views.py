@@ -16,6 +16,8 @@ from syn_edb.OperateDB_Pool import OperateDB_Pool
 from django.views.decorators.csrf import csrf_exempt
 import logging
 from django.db.models import Max
+from django.forms.models import model_to_dict
+
 logger = logging.getLogger("users")
 logger_remedy = logging.getLogger("remedy")
 
@@ -208,11 +210,27 @@ def getData_minute():
     curentDay = curentTime.strftime("%Y-%m-%d")
     getData_multiprocess('getData_minute', curentDay, curentDay)
 def bakGetDataLog():
-
-    curentTime = datetime.datetime.now().strftime("%Y-%m-%d")
-    sevendaybeforeDay = (curentTime - datetime.timedelta(days=8)).strftime("%Y-%m-%d")
+    now_time = datetime.datetime.now()
+    first_day = datetime.datetime(now_time.year, now_time.month, now_time.day)
+    sevendaybeforeDay = (first_day - datetime.timedelta(days=8)).strftime("%Y-%m-%d")
     print("wenti")
-    obj = models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute',createTime__lte=sevendaybeforeDay )
+    objs = models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute',createTime__lte=sevendaybeforeDay )
+    outputdic=[]
+    for obj1 in objs:
+        tempobj=model_to_dict(obj1)
+        ppc=models.AJobLogBak(jobname=obj1.jobname,startTime=obj1.startTime,endTime=obj1.endTime,jobtype=obj1.jobtype,\
+                                status=obj1.status,createTime=obj1.createTime,finishTime=obj1.finishTime,effectnum=obj1.effectnum,\
+                              pageNo=obj1.pageNo,handjobid=obj1.handjobid,handsubjobno=obj1.handjobid)
+        outputdic.append(ppc)
+
+    if not objs.exists():
+        return
+
+    try:
+     models.AJobLogBak.objects.bulk_create(outputdic)
+     models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute', createTime__lte=sevendaybeforeDay).delete()
+    except Exception as err:
+        logger.error(err)
 
     return
 
@@ -402,7 +420,8 @@ def getbeforfiveminute(current):
 @csrf_exempt
 def getData(request):##网络调用接口
     ##a=MqMessage()
-    txt=getItem()
+    ##txt=getItem()
+    bakGetDataLog()
     ##txt=getData_crontab()
     ##getData_everyDay()
     ##getData_everyDay()
