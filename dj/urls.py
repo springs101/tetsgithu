@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^syn/getdata', syn_edb_views.getData),
     url(r'^syn/getData_remedy', syn_edb_views.getData_remedy),
     url(r'^syn/hart_beat', syn_edb_views.hartbeat),
+    url(r'^syn/bak_GetDataLog', syn_edb_views.bakGetDataLog),
 ]

@@ -209,10 +209,13 @@ def getData_minute():
     curentTime = datetime.datetime.now()
     curentDay = curentTime.strftime("%Y-%m-%d")
     getData_multiprocess('getData_minute', curentDay, curentDay)
-def bakGetDataLog():
+@csrf_exempt
+def bakGetDataLog(request):
+    logger.info('开始备份分钟日志。。。。。。。。。。。。。')
     now_time = datetime.datetime.now()
     first_day = datetime.datetime(now_time.year, now_time.month, now_time.day)
-    sevendaybeforeDay = (first_day - datetime.timedelta(days=8)).strftime("%Y-%m-%d")
+    sevendaybeforeDay = (first_day - datetime.timedelta(days=3)).strftime("%Y-%m-%d")
+    logger.info('查询完毕')
     objs = models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute',createTime__lte=sevendaybeforeDay )
     outputdic=[]
     for obj1 in objs:
@@ -222,15 +225,21 @@ def bakGetDataLog():
         outputdic.append(ppc)
 
     if not objs.exists():
-        return
+        msg = {'status': 0}
+        return getresponse(msg)
 
     try:
-     models.AJobLogBak.objects.bulk_create(outputdic)
-     models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute', createTime__lte=sevendaybeforeDay).delete()
+      models.AJobLogBak.objects.bulk_create(outputdic)
+      models.AJobLog.objects.filter(status=1, jobname__startswith='getData_minute', createTime__lte=sevendaybeforeDay).delete()
     except Exception as err:
         logger.error(err)
+        msg = {'status': 1,'err_info':err}
+        return getresponse(msg)
 
-    return
+    logger.info('备份完毕。。。。。')
+
+    msg = {'status': 0}
+    return getresponse(msg)
 
 @csrf_exempt
 def getData_remedy(request):
@@ -419,7 +428,7 @@ def getbeforfiveminute(current):
 def getData(request):##网络调用接口
     ##a=MqMessage()
     ##txt=getItem()
-    bakGetDataLog()
+    ##bakGetDataLog()
     ##txt=getData_crontab()
     ##getData_everyDay()
     ##getData_everyDay()
