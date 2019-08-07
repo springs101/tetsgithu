@@ -7,10 +7,14 @@ import traceback
 import logging
 logger = logging.getLogger("users")
 
+
 class OperateDB_Pool:
     host = '192.168.86.71'
     pasword = ''
     user = 'root'
+    # host = '114.55.187.143'
+    # pasword = 'CrEoKHe5n-qVjQ9vFa#n0Y'
+    # user = 'tidb_write'
     port = 4000
     db = 'asterdata'
     charset = 'utf8'
@@ -29,9 +33,11 @@ class OperateDB_Pool:
     def __init__(self):
         self.pool = PooledDB(MySQLdb, self.limit_count, host=self.host, user=self.user, passwd=self.pasword, db=self.db,
                              port=self.port, charset=self.charset, use_unicode=True)
-    def getinputdata(self,date):
+
+    def getinputdata(self, date):
         del self.opretateData[:]
         self.opretateData = copy.deepcopy(date)
+
     def sqlecude(self, flag):
         try:
             conn11 = self.pool.connection()
@@ -39,12 +45,14 @@ class OperateDB_Pool:
                 if flag == 1:
                     self.handSqlStr()
                     self.groupData(self.opretateData)
-                    cursor.executemany(self.strsqlorder, self.outputobjecArrayOrder)
+                    cursor.executemany(
+                        self.strsqlorder, self.outputobjecArrayOrder)
                 else:
-                    logger.info("*****************************************************************")
+                    logger.info(
+                        "*****************************************************************")
                     self.handitemorder()
                     self.groupItemData(self.opretateData)
-                    temstr=self.delItem+"'"+self.delarray+"'"
+                    temstr = self.delItem + "'" + self.delarray + "'"
                     cursor.execute(temstr)
                     cursor.executemany(self.strsqlitem, self.outputobjecArray)
             conn11.commit()
@@ -57,16 +65,18 @@ class OperateDB_Pool:
         finally:
             conn11.close()
         return
-    def insertLog(self,prceesstype,paramlist):
+
+    def insertLog(self, prceesstype, paramlist):
         try:
             conn11 = self.pool.connection()
             with conn11.cursor() as cursor:
-                exstr="INSERT INTO aster_job_log (jobName,jobType,handJobId,handSubJobNo,startTime,endTime,createTime,finishTime) VALUES ('"+prceesstype+"','auto',%s,%s,%s,%s,%s,%s)"
-                ###print(exstr)
-                cursor.executemany(exstr,paramlist)
+                exstr = "INSERT INTO aster_job_log (jobName,jobType,handJobId,handSubJobNo,startTime,endTime,createTime,finishTime) VALUES ('" + \
+                    prceesstype + "','auto',%s,%s,%s,%s,%s,%s)"
+                # print(exstr)
+                cursor.executemany(exstr, paramlist)
             conn11.commit()
             cursor.close()
-        except Exception as  err:
+        except Exception as err:
             conn11.rollback()
             logger.error("错误21")
             logger.error(traceback.format_exc())
@@ -74,16 +84,18 @@ class OperateDB_Pool:
         finally:
             conn11.close()
         return
-    def updateLog(self,processtype,begindate,enddate,shopId):
+
+    def updateLog(self, processtype, begindate, enddate, shopId):
         try:
             conn11 = self.pool.connection()
             with conn11.cursor() as cursor:
-                upstr='UPDATE aster_job_log SET finishTime = '+"'"+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))+"'"+',status=1 WHERE startTime = '+"'"+begindate+"'"+' and endTime='+"'"+enddate+"'"+'  and handSubJobNo='+shopId+' and jobName='+"'"+processtype+"'"
-                ###print(upstr)
+                upstr = 'UPDATE aster_job_log SET finishTime = ' + "'" + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time(
+                ))) + "'" + ',status=1 WHERE startTime = ' + "'" + begindate + "'" + ' and endTime=' + "'" + enddate + "'" + '  and handSubJobNo=' + shopId + ' and jobName=' + "'" + processtype + "'"
+                # print(upstr)
                 cursor.execute(upstr)
             conn11.commit()
             cursor.close()
-        except Exception as  err:
+        except Exception as err:
             conn11.rollback()
             logger.error("错误31")
             logger.error(traceback.format_exc())
@@ -91,12 +103,15 @@ class OperateDB_Pool:
         finally:
             conn11.close()
         return
+
     def groupData(self, groupDic):
-        ###print(self.objectArray)
+        # print(self.objectArray)
         del self.outputobjecArrayOrder[:]
         for val in groupDic:
-            val['createTime'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-            val['updateTime'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            val['createTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            val['updateTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
             node = []
             for i in self.objectArray:
                 node.append(val[i])
@@ -104,12 +119,14 @@ class OperateDB_Pool:
         return
 
     def groupItemData(self, groupDic):
-        ##print(groupDic)
-        ##print(self.objectArray)
+        # print(groupDic)
+        # print(self.objectArray)
         del self.outputobjecArray[:]
         for val in groupDic:
-            val['createTime'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-            val['updateTime'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            val['createTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            val['updateTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
             node = []
             for i in self.objectArray:
                 node.append(val[i])

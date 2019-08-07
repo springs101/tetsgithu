@@ -119,22 +119,13 @@ def getItem():  # 单独查看某一天的http数据
 
 def getData_crontab():  # 定时器调用接口
     # weekss=allweeks()
-    begindate = '2019-03-30 00:00:00'
-    enddate = '2019-03-30 23:59:59'
-    pagesize = 1000
-    shoiparray = models.SEdbShop.objects.all().values_list()
-    text = ''
-    zongtiaoshu = 0
-    for id in shoiparray:
-        totalnum = getTotalNum(begindate, enddate, str(id[1]))
-        if totalnum == '0':
-            continue
-        zongtiaoshu = int(totalnum)
-        break
-    print("总结果：" + str(zongtiaoshu))
-    kk = "总结果：" + str(zongtiaoshu)
-    printEndTask()
-    return kk
+    begindate = '2019-04-01'
+    enddate = '2019-05-16'
+    getData_multiprocess(
+        'getData_month',
+        begindate,
+        enddate)
+    return 'ok'
 
 
 def getData_multiprocess(processtype, benginday, endday):  # 多进程调用接口
@@ -568,13 +559,13 @@ def getData(request):  # 网络调用接口
     # txt=getData_crontab()
     # getData_everyDay()
     # getData_everyDay()
-    # getData_sevenDay()
+    ##getData_sevenDay()
     # getData_onemonth()
     # getData_multiprocess()
-    # getData_minute()
+    getData_minute()
     # getData_onemonth()
     # getData_minute()
-    return HttpResponse(txt, content_type="application/json")
+    return HttpResponse("wenti", content_type="application/json")
 
 
 def getTotalNum(bgdate, enddate, shopId, data_type='订货日期'):

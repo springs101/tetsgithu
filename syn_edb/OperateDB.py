@@ -5,76 +5,89 @@ import time
 import logging
 logger = logging.getLogger("users")
 
-class OperateDB():
-     host = '192.168.86.71'
-     pasword = ''
-     user = 'root'
-     port = 4000
-     db = 'asterdata'
-     charset = 'utf8'
-     opretateData=[]
-     objectArray=[]
-     outputobjecArray=[]
-     delarray=''
-     conn=''
-     strsqlorder=''
-     strsqlitem=''
-     delItem=''
-     def __init__(self,date):
-         self.opretateData=copy.deepcopy(date)
-         self.conn = pymysql.connect(host=self.host, port=self.port, user=self.user, passwd=self.pasword, db=self.db,charset=self.charset,
-                             cursorclass=pymysql.cursors.DictCursor)
 
-     def sqlecude(self,flag):
-         try:
-             with self.conn.cursor() as cursor:
+class OperateDB():
+    host = '192.168.86.71'
+    pasword = ''
+    user = 'root'
+    # host = '114.55.187.143'
+    # pasword = 'CrEoKHe5n-qVjQ9vFa#n0Y'
+    # user = 'tidb_write'
+    port = 4000
+    db = 'asterdata'
+    charset = 'utf8'
+    opretateData = []
+    objectArray = []
+    outputobjecArray = []
+    delarray = ''
+    conn = ''
+    strsqlorder = ''
+    strsqlitem = ''
+    delItem = ''
+
+    def __init__(self, date):
+        self.opretateData = copy.deepcopy(date)
+        self.conn = pymysql.connect(host=self.host, port=self.port, user=self.user, passwd=self.pasword, db=self.db, charset=self.charset,
+                                    cursorclass=pymysql.cursors.DictCursor)
+
+    def sqlecude(self, flag):
+        try:
+            with self.conn.cursor() as cursor:
                 if flag == 1:
-                     self.handSqlStr()
-                     self.groupData(self.opretateData)
-                     ##print(self.outputobjecArray)
-                     cow=cursor.executemany(self.strsqlorder, self.outputobjecArray)
+                    self.handSqlStr()
+                    self.groupData(self.opretateData)
+                    # print(self.outputobjecArray)
+                    cow = cursor.executemany(
+                        self.strsqlorder, self.outputobjecArray)
                 else:
                     self.handitemorder()
                     self.groupItemData(self.opretateData)
-                    ###print(self.outputobjecArray[0])
-                    delcow = cursor.execute(self.delItem,self.delarray)
-                    addcow = cursor.executemany(self.strsqlitem, self.outputobjecArray)
+                    # print(self.outputobjecArray[0])
+                    delcow = cursor.execute(self.delItem, self.delarray)
+                    addcow = cursor.executemany(
+                        self.strsqlitem, self.outputobjecArray)
                 self.conn.commit()
-         except Exception as err:
-             self.conn.rollback()
-             logger.error(err)
-         finally:
-             self.conn.close()
-             logger.info('finisth commit')
-         return
-     def groupData(self,groupDic):
-         for val in groupDic:
-             val['createTime'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-             val['updateTime'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-             node = []
-             for i in self.objectArray:
-                 node.append(val[i])
-             self.outputobjecArray.append(node)
-         ##print(self.outputobjecArray)
-         return
-     def groupItemData(self,groupDic):
-         ##print(groupDic)
-         for val in groupDic:
-             val['createTime']=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-             val['updateTime'] =time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-             node = []
-             for i in self.objectArray:
-                 node.append(val[i])
-                 if i=='tid':
-                     self.delarray=val[i]
-             self.outputobjecArray.append(node)
-         ##print(self.outputobjecArray)
-         return
+        except Exception as err:
+            self.conn.rollback()
+            logger.error(err)
+        finally:
+            self.conn.close()
+            logger.info('finisth commit')
+        return
 
-     def handitemorder(self):
-         self.delItem = 'delete from s_order_item where tid = %s'
+    def groupData(self, groupDic):
+        for val in groupDic:
+            val['createTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            val['updateTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            node = []
+            for i in self.objectArray:
+                node.append(val[i])
+            self.outputobjecArray.append(node)
+        # print(self.outputobjecArray)
+        return
 
-         self.strsqlitem ="insert into s_order_item(tid,\
+    def groupItemData(self, groupDic):
+        # print(groupDic)
+        for val in groupDic:
+            val['createTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            val['updateTime'] = time.strftime(
+                '%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            node = []
+            for i in self.objectArray:
+                node.append(val[i])
+                if i == 'tid':
+                    self.delarray = val[i]
+            self.outputobjecArray.append(node)
+        # print(self.outputobjecArray)
+        return
+
+    def handitemorder(self):
+        self.delItem = 'delete from s_order_item where tid = %s'
+
+        self.strsqlitem = "insert into s_order_item(tid,\
 pro_detail_code,\
 pro_name,\
 specification,\
@@ -177,12 +190,13 @@ updateTime) values (%s\
 ,%s\
 ,%s\
 ,%s,%s,%s)"
-         temp = re.findall(r'[(](.*?)[)]', self.strsqlitem)
-         object = temp[0].split(',')
-         self.objectArray = copy.deepcopy(object)
-         return
-     def handSqlStr(self):
-        self.strsqlorder="insert into s_order(resultNum,\
+        temp = re.findall(r'[(](.*?)[)]', self.strsqlitem)
+        object = temp[0].split(',')
+        self.objectArray = copy.deepcopy(object)
+        return
+
+    def handSqlStr(self):
+        self.strsqlorder = "insert into s_order(resultNum,\
 storage_id,\
 transaction_id,\
 customer_id,\
@@ -711,8 +725,6 @@ tid,createTime,updateTime) values(%s\
     big_marker=values(big_marker),\
     updateTime=values(updateTime),\
     platform_preferential=values(platform_preferential)"
-        temp=re.findall(r'[(](.*?)[)]',self.strsqlorder)
-        object=temp[0].split(',')
+        temp = re.findall(r'[(](.*?)[)]', self.strsqlorder)
+        object = temp[0].split(',')
         self.objectArray = copy.deepcopy(object)
-
-
