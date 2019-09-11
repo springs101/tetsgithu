@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/------" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ItChat" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/getRecordListFromEDB" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wxpy" vcs="Git" />
   </component>
 </project>

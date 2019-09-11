@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b511d91d-40bb-43d0-8824-161a1e6d4ada" name="Default Changelist" comment="测试增加">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/dj$views.coverage" NAME="views Coverage Results" MODIFIED="1552891248029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/syn_edb" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="dj" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/syn_edb/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24850">
+              <caret line="254" selection-start-line="254" selection-end-line="254" />
+              <folding>
+                <element signature="e#25#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/syn_edb/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dj/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dj/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dj/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/syn_edb/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10920">
+              <caret line="364" column="71" selection-start-line="364" selection-start-column="71" selection-end-line="364" selection-end-column="71" />
+              <folding>
+                <element signature="e#468#496#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dj/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1280">
+              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/syn_edb/OperateDB.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/syn_edb/OperateDB_Pool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6330">
+              <caret line="211" column="4" selection-start-line="211" selection-start-column="4" selection-end-line="211" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getData</find>
+      <find>obj</find>
+      <find>AHandJob</find>
+      <find>Max</find>
+      <find>bulk_create</find>
+      <find>AJobLogBak</find>
+      <find>%Y-%m-%d</find>
+      <find>month</find>
+      <find>getItem</find>
+      <find>getData_crontab</find>
+      <find>getData_month</find>
+      <find>OperateDB</find>
+      <find>handleConnPool</find>
+      <find>auto</find>
+      <find>models</find>
+      <find>create</find>
+      <find>getData_remedy</find>
+      <find>@csrf_exempt</find>
+      <find>request</find>
+      <find>csrf_exempt</find>
+      <find>json</find>
+      <find>delete</find>
+      <find>AJobLog</find>
+      <find>getData_minute</find>
+      <find>DELETE</find>
+      <find>handitemorder</find>
+      <find>sqlecude</find>
+      <find>getdata</find>
+      <find>getresponse</find>
+      <find>HttpResponse</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>models.CharField(max_length=100)</replace>
+      <replace>models.CharField(max_length=200)</replace>
+      <replace>models.DateField(auto_now=False, auto_now_add=False)</replace>
+      <replace>'],\</replace>
+      <replace>%s</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/syn_edb/MqMessage.py" />
+        <option value="$PROJECT_DIR$/dj/settings.py" />
+        <option value="$PROJECT_DIR$/dj/__init__.py" />
+        <option value="$PROJECT_DIR$/------/.gitattributes" />
+        <option value="$PROJECT_DIR$/syn_edb/OperateDB_Pool.py" />
+        <option value="$PROJECT_DIR$/syn_edb/OperateDB.py" />
+        <option value="$PROJECT_DIR$/dj/urls.py" />
+        <option value="$PROJECT_DIR$/syn_edb/models.py" />
+        <option value="$PROJECT_DIR$/syn_edb/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="dj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="dj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="syn_edb" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dj" type="462c0819:PsiDirectoryNode" />
+              <item name="dj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dj" type="462c0819:PsiDirectoryNode" />
+              <item name="syn_edb" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dj\dj" />
+      <recent name="D:\dj\syn_edb" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.dj">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/syn_edb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/syn_edb/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dj" type="Python.DjangoServer" factoryName="Django server">
+      <module name="dj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="dj.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b511d91d-40bb-43d0-8824-161a1e6d4ada" name="Default Changelist" comment="" />
+      <created>1552880040176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552880040176</updated>
+      <workItem from="1552880130475" duration="3291000" />
+      <workItem from="1552889005048" duration="5872000" />
+      <workItem from="1552964807057" duration="19662000" />
+      <workItem from="1552999816764" duration="28775000" />
+      <workItem from="1553131366934" duration="27130000" />
+      <workItem from="1553171095944" duration="99699000" />
+      <workItem from="1553592982256" duration="19368000" />
+      <workItem from="1553741192438" duration="14732000" />
+      <workItem from="1553838618207" duration="54786000" />
+      <workItem from="1554209068659" duration="92000" />
+      <workItem from="1554252658259" duration="25963000" />
+      <workItem from="1554770964241" duration="36391000" />
+      <workItem from="1554861101443" duration="59491000" />
+      <workItem from="1555291294982" duration="15761000" />
+      <workItem from="1555395361017" duration="315000" />
+      <workItem from="1555400311089" duration="615000" />
+      <workItem from="1555401137439" duration="11034000" />
+      <workItem from="1555491934891" duration="9104000" />
+      <workItem from="1555587474619" duration="48000" />
+      <workItem from="1555639945098" duration="161000" />
+      <workItem from="1555640466865" duration="784000" />
+      <workItem from="1555644052832" duration="1517000" />
+      <workItem from="1555654075749" duration="18000" />
+      <workItem from="1555654238466" duration="22000" />
+      <workItem from="1555655609947" duration="135000" />
+      <workItem from="1555893389562" duration="764000" />
+      <workItem from="1555924004861" duration="808000" />
+      <workItem from="1555984601782" duration="101000" />
+      <workItem from="1555984721485" duration="16000" />
+      <workItem from="1555984802521" duration="167000" />
+      <workItem from="1555985059127" duration="14000" />
+      <workItem from="1555985939553" duration="47000" />
+      <workItem from="1555987485028" duration="631000" />
+      <workItem from="1556068897625" duration="1132000" />
+      <workItem from="1556087857434" duration="648000" />
+      <workItem from="1556158232393" duration="618000" />
+      <workItem from="1556159625293" duration="1646000" />
+      <workItem from="1556249114099" duration="8470000" />
+      <workItem from="1556273031146" duration="799000" />
+      <workItem from="1556416083678" duration="17000" />
+      <workItem from="1556416439057" duration="12588000" />
+      <workItem from="1556451309079" duration="12151000" />
+      <workItem from="1556525899363" duration="970000" />
+      <workItem from="1556531200223" duration="212000" />
+      <workItem from="1556603277075" duration="1875000" />
+      <workItem from="1557021742991" duration="105000" />
+      <workItem from="1557102377347" duration="9000" />
+      <workItem from="1557102405923" duration="416000" />
+      <workItem from="1557127409182" duration="107000" />
+      <workItem from="1557127543656" duration="16000" />
+      <workItem from="1557208048790" duration="13289000" />
+      <workItem from="1557457911845" duration="298000" />
+      <workItem from="1557737179292" duration="522000" />
+      <workItem from="1557742603675" duration="818000" />
+      <workItem from="1557905348790" duration="2468000" />
+      <workItem from="1558002590475" duration="3755000" />
+      <workItem from="1558073947079" duration="815000" />
+      <workItem from="1558404505836" duration="79000" />
+      <workItem from="1558490872034" duration="46000" />
+      <workItem from="1559009064816" duration="3010000" />
+      <workItem from="1559015833881" duration="3482000" />
+      <workItem from="1559025667786" duration="15000" />
+      <workItem from="1560153535905" duration="41000" />
+      <workItem from="1560479172513" duration="3222000" />
+      <workItem from="1560766656224" duration="12000" />
+      <workItem from="1564045221512" duration="30000" />
+      <workItem from="1564213036510" duration="1812000" />
+      <workItem from="1564219880394" duration="2104000" />
+      <workItem from="1564363475010" duration="11000" />
+      <workItem from="1564823019261" duration="159000" />
+      <workItem from="1564823597026" duration="2362000" />
+      <workItem from="1564971360197" duration="7441000" />
+      <workItem from="1564996437133" duration="6000" />
+      <workItem from="1565052230755" duration="620000" />
+      <workItem from="1565070404493" duration="15000" />
+      <workItem from="1565159136110" duration="177000" />
+      <workItem from="1565244157649" duration="56000" />
+      <workItem from="1565837059652" duration="794000" />
+      <workItem from="1566180813363" duration="602000" />
+      <workItem from="1566436199480" duration="124000" />
+      <workItem from="1567752306107" duration="44000" />
+      <workItem from="1567754043143" duration="4012000" />
+      <workItem from="1567994516504" duration="48000" />
+      <workItem from="1568164736858" duration="790000" />
+    </task>
+    <task id="LOCAL-00001" summary="测试增加">
+      <created>1556417347565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556417347565</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改路劲">
+      <created>1556421318232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556421318232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加处理日志表超量接口">
+      <created>1556504543495</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556504543496</updated>
+    </task>
+    <task id="LOCAL-00004" summary="去除trace">
+      <created>1556504616965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556504616965</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改保留日志天数">
+      <created>1556515994829</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556515994829</updated>
+    </task>
+    <task id="LOCAL-00006" summary="减少接口">
+      <created>1556520116843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556520116843</updated>
+    </task>
+    <task id="LOCAL-00007" summary="测试增加">
+      <created>1557742676448</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557742676448</updated>
+    </task>
+    <task id="LOCAL-00008" summary="增加">
+      <created>1565159196471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159196471</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="532172000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49950933" visible="true" weight="0.117803834" />
+      <window_info id="Structure" order="1" sideWeight="0.50049067" side_tool="true" weight="0.0727345" />
+      <window_info id="Favorites" order="2" sideWeight="0.50049067" side_tool="true" weight="0.0727345" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3989239" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.87678856" weight="0.1609323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49801272" weight="0.3289777" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289777" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12321144" side_tool="true" weight="0.41122213" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49523053" weight="0.13873474" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.79570746" weight="0.2820907" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改路劲" />
+    <MESSAGE value="增加处理日志表超量接口" />
+    <MESSAGE value="去除trace" />
+    <MESSAGE value="修改保留日志天数" />
+    <MESSAGE value="减少接口" />
+    <MESSAGE value="测试增加" />
+    <MESSAGE value="增加" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>203</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>547</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>398</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>433</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>790</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>164</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>219</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>620</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>519</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>241</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>381</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>257</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/OperateDB_Pool.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/OperateDB_Pool.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/syn_edb/views.py</url>
+          <line>564</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Python.DjangoServer">
+        <watch expression="models" language="Python" />
+        <watch expression="listordertemp" language="Python" />
+        <watch expression="productItem" language="Python" />
+        <watch expression="week.size" language="Python" />
+        <watch expression="secd.day()" language="Python" />
+        <watch expression="id[1]" language="Python" />
+        <watch expression="len(week)" language="Python" />
+        <watch expression="groupDic" language="Python" />
+        <watch expression="id" language="Python" />
+        <watch expression="productItem.values()" language="Python" />
+        <watch expression="resData['Success']['items']" language="Python" />
+        <watch expression="self.outputobjecArray.__len__()" language="Python" />
+        <watch expression="val[tid]" language="Python" />
+        <watch expression="val['tid']" language="Python" />
+        <watch expression="val[i]" language="Python" />
+        <watch expression="obj.exists()" language="Python" />
+        <watch expression="val.get('tid')" language="Python" />
+        <watch expression="obj" />
+        <watch expression="daylist" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>secd.day()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>secd.day</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>secd.strftime('%S')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>secd.seconds()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>secd.second()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>secd.minute()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>resData['Success']['items']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>daylist</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>obj.exists()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>id[1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/utils/autoreload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="424" selection-start-line="424" selection-end-line="424" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/forms/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="870" selection-start-line="870" selection-end-line="870" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/wsgiref/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2407">
+          <caret line="473" column="11" lean-forward="true" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/apps/registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="145" column="74" lean-forward="true" selection-start-line="145" selection-start-column="74" selection-end-line="145" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="469" selection-start-line="469" selection-end-line="469" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/MqMessage.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="355" column="8" selection-start-line="355" selection-start-column="8" selection-end-line="355" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="131" column="65" lean-forward="true" selection-start-line="131" selection-start-column="65" selection-end-line="131" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/logging/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="382" selection-start-line="382" selection-end-line="382" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/------/.gitattributes" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="287" column="8" selection-start-line="287" selection-start-column="8" selection-end-line="287" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dj/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24850">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+          <folding>
+            <element signature="e#25#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/OperateDB_Pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6330">
+          <caret line="211" column="4" selection-start-line="211" selection-start-column="4" selection-end-line="211" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/OperateDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/syn_edb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10920">
+          <caret line="364" column="71" selection-start-line="364" selection-start-column="71" selection-end-line="364" selection-end-column="71" />
+          <folding>
+            <element signature="e#468#496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dj/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1280">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dj/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dj/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
